@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Repte 13 – Web estática con S3 y CloudFront</title>
+  <title>Repte 13 – Web estática con S3 y Amplify</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
@@ -47,7 +47,7 @@
     <h1>Repte 13</h1>
     <p>
       Sitio web estático desplegado usando <strong>Amazon S3</strong>,
-      <strong>CloudFront</strong> y <strong>HTTPS</strong>.
+      <strong>Amplify</strong> y <strong>HTTPS</strong>.
     </p>
 
     <div class="box">
@@ -59,13 +59,13 @@
 
     <h2>Arquitectura</h2>
     <p>
-      Usuario → CloudFront (CDN + caché) → S3 (archivos estáticos)
+      Usuario → Amplify (CDN + caché) → S3 (archivos estáticos)
     </p>
 
     <h2>Objetivos</h2>
     <ul>
       <li>Alojamiento estático en S3</li>
-      <li>Caché global con CloudFront</li>
+      <li>Caché global con Amplify</li>
       <li>HTTPS con ACM</li>
       <li>Control de caché e invalidaciones</li>
     </ul>
@@ -76,3 +76,4 @@
   </main>
 </body>
 </html>
+
