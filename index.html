@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Repte 13 – Web estática con S3 y Amplify</title>
+  <title>Repte 13 – Web estática con AWS Amplify</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
@@ -46,28 +46,29 @@
   <main>
     <h1>Repte 13</h1>
     <p>
-      Sitio web estático desplegado usando <strong>Amazon S3</strong>,
-      <strong>Amplify</strong> y <strong>HTTPS</strong>.
+      Sitio web estático desplegado usando <strong>AWS Amplify Hosting</strong>
+      con <strong>HTTPS</strong>.
     </p>
 
     <div class="box">
       <p>
-        Este sitio se sirve globalmente mediante un CDN, mejorando el rendimiento,
-        reduciendo la latencia y habilitando acceso seguro mediante HTTPS.
+        Este sitio se sirve globalmente mediante el CDN integrado de AWS Amplify,
+        mejorando el rendimiento, reduciendo la latencia y ofreciendo acceso
+        seguro mediante HTTPS.
       </p>
     </div>
 
     <h2>Arquitectura</h2>
     <p>
-      Usuario → Amplify → S3 (archivos estáticos)
+      Usuario → AWS Amplify (CDN integrado) → S3 gestionado por Amplify
     </p>
 
     <h2>Objetivos</h2>
     <ul>
-      <li>Alojamiento estático en S3</li>
-      <li>Caché global con Amplify</li>
-      <li>HTTPS con ACM</li>
-      <li>Control de caché e invalidaciones</li>
+      <li>Alojamiento estático gestionado por AWS Amplify</li>
+      <li>Caché global integrada</li>
+      <li>HTTPS automático gestionado por AWS</li>
+      <li>Despliegue continuo desde GitHub</li>
     </ul>
 
     <footer>
@@ -76,5 +77,3 @@
   </main>
 </body>
 </html>
-
-
