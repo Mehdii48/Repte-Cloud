@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Repte 13 – Web estática con S3 y CloudFront</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui, Arial, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      margin: 0;
+      padding: 0;
+    }
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      margin-top: 2.5rem;
+      color: #93c5fd;
+    }
+    p {
+      line-height: 1.6;
+    }
+    .box {
+      background: #020617;
+      border: 1px solid #1e293b;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+    footer {
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Repte 13</h1>
+    <p>
+      Sitio web estático desplegado usando <strong>Amazon S3</strong>,
+      <strong>CloudFront</strong> y <strong>HTTPS</strong>.
+    </p>
+
+    <div class="box">
+      <p>
+        Este sitio se sirve globalmente mediante un CDN, mejorando el rendimiento,
+        reduciendo la latencia y habilitando acceso seguro mediante HTTPS.
+      </p>
+    </div>
+
+    <h2>Arquitectura</h2>
+    <p>
+      Usuario → CloudFront (CDN + caché) → S3 (archivos estáticos)
+    </p>
+
+    <h2>Objetivos</h2>
+    <ul>
+      <li>Alojamiento estático en S3</li>
+      <li>Caché global con CloudFront</li>
+      <li>HTTPS con ACM</li>
+      <li>Control de caché e invalidaciones</li>
+    </ul>
+
+    <footer>
+      AWS Academy · DEV + SIS · Repte 13
+    </footer>
+  </main>
+</body>
+</html>
